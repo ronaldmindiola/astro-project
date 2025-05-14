@@ -31,6 +31,15 @@
       "@styles/*": [
         "./src/styles/*"
       ],
+      "@images/*": [
+        "./src/images/*"
+      ],
+      "@logos/*": [
+        "./src/images/logos/*"
+      ],
+      "@data/*": [
+        "./src/data/*"
+      ],
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

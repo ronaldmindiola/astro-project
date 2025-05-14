@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+
+const { brandName, tagline } = Astro.props;
+import logodark from "@logos/logo-dark.png";
+import logolight from "@logos/logo-light.png";
+---
+
+<div class="flex items-center">
+    <div class="dark:hidden">
+        <Image
+            src={logolight}
+            alt={`${brandName} logo`}
+            class="w-16 h-auto"
+            format="webp"
+        />
+    </div>
+    <div class="hidden dark:block">
+        <Image
+            src={logodark}
+            alt={`${brandName} logo`}
+            class="w-16 h-auto"
+            format="webp"
+        />
+    </div>
+    <div>
+        <h1 class="text-2xl font-bold">{brandName}</h1>
+        {tagline && <p class="text-sm text-gray-600">{tagline}</p>}
+    </div>
+</div>
