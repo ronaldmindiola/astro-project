@@ -1,16 +1,25 @@
 ---
+import Layout from "../layouts/layout.astro";
+
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Welcome to Astro Project">
+	<header>
+		<h1>Welcome to Astro Project!</h1>
+		<p>
+			This is a simple Astro project. You can start building your site by
+			modifying the files in the <code>src</code> directory.
+			This project is set up with a basic layout and a dependencies include tal como React, Tailwind CSS, Shadcn.
+		</p>
+		<p>
+			To learn more about Astro, check out the <a href="https://astro.build">Astro documentation</a>.
+		</p>
+	</header>
+	<main>
+		<slot />
+	</main>
+	<footer>
+		<p>© 2023 Your Name. All rights reserved.</p>
+	</footer>
+</Layout>
