@@ -1,0 +1,11 @@
+---
+import Layout from '@layouts/monoPage.astro'
+import DashboardApp from '@/components/organisms/ToyaApp'
+---
+
+<Layout title="Dashboard">
+  <DashboardApp client:load>
+    <h1>Dashboard</h1>
+    <p>Welcome to the dashboard!</p>
+  </DashboardApp>
+</Layout>
