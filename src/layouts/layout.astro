@@ -1,11 +1,18 @@
 ---
+<<<<<<< HEAD
 import { SEO } from "astro-seo";
 const { title } = Astro.props;
 import "@styles/global.css";
+=======
+const { title } = Astro.props
+import '@styles/global.css'
+import { useState } from 'react'
+>>>>>>> nano
 ---
 
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,4 +64,25 @@ import "@styles/global.css";
             <p>© 2023 Your Name. All rights reserved.</p>
         </footer>
     </body>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="bg-gray-100 p-">
+      <h1 class="text-4xl font-bold text-blue-500">
+        Welcome to Astro Project!s
+      </h1>
+      <p>This is a simple Astro project.</p>
+    </header>
+    <main class="p-4 bg-red-100">
+      <slot />
+    </main>
+    <footer class="bg-gray-200 p-4">
+      <p>© 2023 Your Name. All rights reserved.</p>
+    </footer>
+  </body>
+>>>>>>> nano
 </html>
